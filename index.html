@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EyeEm">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/6232a3eb5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body onscroll="getdark()">
+
+    <header class="container-fluid p-0">
+        <!--  carousel -->
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+              <form class="d-flex align-items-center w-100 p-3" style=" visibility:visible;position:absolute; top:50px; z-index:2;" id="Form1">
+                <div class="position-absolute" style="left:35px;">
+                  <i class="fas fa-search position-relative"></i>
+                </div>
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search for photos" aria-label="Search" id="sr1" style="box-sizing: border-box; padding-left:50px;">
+                <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
+              </form>
+
+              <div class="carousel-item active landing1">
+
+                <div class="carousel-caption text-start w-100 p-5 text-start">
+                  <h5 class="carousel-item-header">Authentic Stock Photos That Make A Statement</h5>
+                  <p class="carousel-item-paragraph">The best place to buy premium, royalty-free stock images from a global creative community.</p>
+                  <button class=" btn btn-outline-dark btn-light p-3 fw-bold">
+                      Find Photos
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="carousel-item landing2">
+                  <div class="position-absolute start-0 top-0 w-100 h-100 bg-dark bg-opacity-50">
+                  </div>
+                <div class="carousel-caption text-start p-4 ">
+                  <h5 class="carousel-item-header">Don't Miss The EyeEm Visual Trends Report 2022</h5>
+                  <p  class="carousel-item-paragraph">Start the right conversations with our free essential guide to the most important visuals you'll need in 2022.</p>
+                  <button class=" btn btn-outline-warning btn-dark p-3 fw-bold">
+                    Download Now
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="carousel-item landing3">
+                <div class="position-absolute start-0 top-0 w-100 h-100 bg-dark bg-opacity-50">
+                </div>
+                <div class="carousel-caption text-start p-4">
+                  <h5 class="carousel-item-header">Get Your Images at the Lowest Price</h5>
+                  <p class="carousel-item-paragraph">Our new flexible subscriptions allow you to save money where it matters.</p>
+                  <button class=" btn btn-outline-dark btn-light p-3 fw-bold">
+                    Save With Subscriptions
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon  d-none d-lg-block " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon d-none d-lg-block" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+
+          <!-- logos -->
+
+          <div class="d-flex flex-wrap flex-lg-nowrap logos justify-content-center align-items-center gap-4 pt-2 pb-2">
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2 ">
+                <img src="images/5fc4ee9090619a700b3b8d49_Skyscanner-Logo.svg" alt="image1" class="d-block w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2">
+                <img src="images/5fc4edcf3733cc90a8f402e7_GYG-Logo.svg" alt="image2" class="d-block  w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2">
+                <img src="images/5fc4ed455aabf20b8a60c811_Trivago-Logo.svg" alt="image3" class="d-block  w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2 ">
+                <img src="images/5fc4defe7c6283fda5bf094a_Shopify-Logo.svg" alt="image4" class="d-block  w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2 ">
+                <img src="images/5fc4c86006388f842828efd6_Sennheiser-Logo.svg" alt="image5" class="d-block  w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1  p-2">
+                <img src="images/5fc4c800967d83a3d4f502ac_BCG-Logo.svg" alt="image6" class="d-block  w-100">
+              </div>
+              <div class="d-flex align-items-center flex-lg-grow-1 p-2">
+                <img src="images/5fc4c83b8a88f447cbc4434c_N26-Logo.svg" alt="image7" class="d-block  w-100">
+              </div>
+            </div>
+
+          <!--------------->
+        <nav class="navbar navbar-expand-lg navbar-light  position-fixed top-0 start-0 w-100" id=navbar-example2>
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#" >EyeEm</a>
+              <button class="navbar-toggler bg-white btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="hide_searchbar()">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between ps-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-0 mb-0 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white p-2" aria-current="page" href="#">Buy Stockphotos</a>
+                  </li>
+                  <li class="nav-item position-relative">
+                    <a class="nav-link text-white p-2" href="#">Book Photoshoots</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white p-2" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown" style="background-color: black;">
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"> <i class="fas fa-search me-2"></i>EyeEm magazine</a></li>
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"> <i class="fas fa-newspaper me-2"></i></i>Our Story</a></li>
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"> <i class="fas fa-lock me-2"></i>Terms and privacy</a></li>
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"> <i class="fas fa-headphones me-2"></i>FAQ & Help</a></li>
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"> <i class="fas fa-heart me-2"></i>Work With Us</a></li>
+                      <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-envelope me-2"></i>Contact Us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white p-2" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        For photographers
+                      </a>
+                      <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown2" style="background-color: black;">
+                        <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-dollar-sign me-2"></i>Sell Your Photos</a></li>
+                        <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-camera me-2"></i>Get Hired for Shoots</a></li>
+                        <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-users me-2"></i>Join The Community</a></li>
+                        <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-award me-2"></i>EyeEm Awards</a></li>
+                        <li> <a class="dropdown-item-text text-white p-2" href="#"><i class="fas fa-trophy me-2"></i></i>Missions</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item position-relative">
+                      <span class="position-absolute   badge rounded-pill bg-danger mt-2 badge2 d-none d-lg-block">
+                        2
+                      </span>
+                        <a class="nav-link text-white p-2 position-relative" href="#">
+                          <i class="fas fa-shopping-cart me-2 me-lg-0 text-center"></i>
+                          <span class="d-lg-none">Cart</span>
+                        </a>
+                    </li>
+                      <li class="nav-item text-lg-center"data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link text-white p-2" href="#"><i class="far fa-user-circle text-center me-2 me-lg-0"></i><span class="d-lg-none"> Profile</span></a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+  <!-- modal for  log in   -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control">
+          </div>
+          <input type="submit" name="submit" id="submit" value="Sign in" class="btn btn-primary">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModa2">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for sign up -->
+
+<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabe2">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="text-1" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="text-1" required>
+          </div>
+          <div class="mb-3">
+            <label for="text-2" class="col-form-label">Surname</label>
+            <input type="text" class="form-control" id="text-2" required>
+          </div>
+          <div class="mb-3">
+            <label for="email2" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="email2" required>
+          </div>
+          <div class="mb-3">
+            <label for="password2" class="col-form-label">Password</label>
+            <input type="password" name="password" id="password2" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="tel" class="col-form-label">Phone</label>
+            <input type="tel" class="form-control" id="tel" required pattern="[0-9]{11}">
+          </div>
+
+          <input type="submit" name="submit" id="submit2" value="Sign Up" class="btn btn-primary">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+  <section class="gallery1 ">
+          <div class="row ms-0 me-0">
+            <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+              <img src="images/61d55354e34ebb3eccadbcc8_VTR 2022 Underrepresentation.jpg" alt="image8" class="d-block w-100">
+              <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+                <p class="text-white text-center underrepresentation"> 
+                 presentation
+                </p>
+                <p class="text-white">
+                    View Collection
+                </p>
+              </div>
+            </div>
+                <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+                  <img src="images/61dffdf703c572008b3ec409_VTR 2022 Color of the Year.jpg" alt="image9" class="d-block w-100">
+                  <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                      2022 Color of the Year
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+                  <img src="images/61d5530d2934908ac3d80ffb_VTR 2022 Artificial Nature.jpg" alt="image10" class="d-block w-100">
+                  <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                      Artificial Nature
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+                  <img src="images/5fce55e49e27705344025b1a_Fashion & Beauty.jpg" alt="image11" class="d-block w-100">
+                  <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                      Fashion and Beauty
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="row ms-0 me-0">
+            <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+              <img src="images/5fce55daebf99a160f84fe6a_Inclusive societies.jpg" alt="image12" class="d-block w-100">
+              <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                      Inclusive Societies
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+              </div>
+          </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce58e84056edb6b324e25f_wellbeing.jpg" alt="image13" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Health & Wellness
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce55b0e323b554eecbd5ee_150839233.jpg" alt="image14" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Save Our Seas
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce558ccb0a73f69e4ed740_Minimal thoughts.jpg" alt="image15" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Minimal Thoughts
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+          </div>
+
+          <div class="row ms-0 me-0">
+            <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+              <img src="images/5fce557417170f1a11c1d863_Industry & Innovation.jpg" alt="image16" class="d-block w-100">
+              <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                      Industry & Innovation
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+              </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce556404bbd870242161b1_Body positivity.jpg" alt="image17" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Body Positivity
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce553f121adc7037122c2c_Health Care.jpg" alt="image18" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Health Care
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce5635be716a4618ea752a_Mellow Yellow.jpg" alt="image19" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Mellow Yellow
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+          </div>
+          <div class="row ms-0 me-0">
+            <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+              <img src="images/5fce55341f422436bb077a32_Home Living_.jpg" alt="image20" class="d-block w-100">
+              <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-white text-center"> 
+                     Home Living
+                    </p>
+                    <p class="text-white">
+                        View Collection
+                    </p>
+              </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/61d4602d5f42f5a1634a3b36_VTR 2022 Sustainability.jpg" alt="image21" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Sustainability
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce5612121adc8eca122df7_The munchies.jpg" alt="image22" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              The Munchies
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+          <img src="images/5fce5529276a0aef2394fd2f_Transportation.jpg" alt="image23" class="d-block w-100">
+          <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white text-center"> 
+              Transportation
+            </p>
+            <p class="text-white">
+                View Collection
+            </p>
+          </div>
+        </div>
+          </div>
+  </section>
+
+  <section class="row ms-0 me-0">
+    <div class="col-md-7">
+      <h5>
+        Save Up to 80% With Our New Subscriptions
+      </h5>
+      <p>
+        Get creative with your budget again. Our flexible subscriptions give you the lowest price per image.
+      </p>
+    </div>
+    <div class="col-md-5 d-flex flex-column flex-md-row flex-column justify-content-md-center align-items-md-center">
+      <button class="btn btn-light p-3 fw-bold btn-outline-dark  d-block">
+        Explore Subscriptions
+      </button>
+    </div>
+  </section>
+
+  <section class="gallery1 ">
+    <div class="row ms-0 me-0">
+          <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+                <img src="images/5fce56024f3c550471451daf_Business insiders.jpg" alt="image" class="d-block w-100">
+                <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+                      <p class="text-white text-center"> 
+                        Business Insiders
+                      </p>
+                      <p class="text-white">
+                          View Collection
+                      </p>
+                </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+            <img src="images/5fce551f78892d864f78e33d_Star gazing 2.jpg" alt="image" class="d-block w-100">
+            <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Star Gazing
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+            <img src="images/5fce565c8bba2813145e2897_Architecture & Design_.jpg" alt="image" class="d-block w-100">
+            <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Architecture
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+            <img src="images/5fce550f30f94e7b5f5b4da3_Pride.jpg" alt="image" class="d-block w-100">
+            <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Pride
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row ms-0 me-0">
+      <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+        <img src="images/5fce54fbe54324bc19150399_Cafe Culture.jpg" alt="image" class="d-block w-100">
+        <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Cafe Culture
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+        </div>
+    </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/5fce564cbb2c645392641786_Urgency.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Environmental Urgency
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/5fce5642cd75049f99505d87_Depth Over Distance.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Fitness & Wellbeing
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/61b8b2edbc42fd5c07c1ac23_VTR 2022 Space.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Depth Over Distance
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+    </div>
+
+    <div class="row ms-0 me-0">
+      <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+        <img src="images/5fce54b29df4d032de9afa2b_Minor details.jpg" alt="image" class="d-block w-100">
+        <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Space
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/5fce5487dda2c668841114d0_Aerial Views.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Minor Details
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/61d5546ff7c6ddc9b0f8908c_VTR 2022 Localized Perspective.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Aerial Views
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/61d554a6f550f201d9cc87df_VTR 2022 Otherworldly.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Localized Perspectives
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+    </div>
+    <div class="row ms-0 me-0">
+      <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+        <img src="images/5fce557417170f1a11c1d863_Industry & Innovation.jpg" alt="image" class="d-block w-100">
+        <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark  bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+              <p class="text-white text-center"> 
+                Other Worldly
+              </p>
+              <p class="text-white">
+                  View Collection
+              </p>
+        </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/606320049a81c25df7477647_169902715.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50  photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        New Life
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/5fce55ef7cd50b384067b960_Engagiing Millennials.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Technicolor Dreams
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-3 col-sm-6 p-0 position-relative photo">
+    <img src="images/5fce58747d368d6bf9f44c7d_Health & Wellness.jpg" alt="image" class="d-block w-100">
+    <div class="position-absolute w-100 h-100 start-0 top-0 bg-dark bg-opacity-50 photo-card d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white text-center"> 
+        Engaging Millennials
+      </p>
+      <p class="text-white">
+          View Collection
+      </p>
+    </div>
+  </div>
+    </div>
+</section>
+    
+<section class="row ms-0 me-0">
+  <div class="p-sm-5 p-3  col-xxl-8 d-flex flex-column flex-nowrap text-center text-sm-start">
+    <h5>
+      Save Up to 80% With Our New Subscriptions
+    </h5>
+    <p>
+      Get creative with your budget again. Our flexible subscriptions give you the lowest price per image.
+    </p>
+    <div class="d-flex flex-wrap  align-items-center gap-2 justify-content-center justify-content-md-start ">
+      <div class="d-flex align-items-center ">
+        <img src="images/white_svgs/5fc4ee9090619a700b3b8d49_Skyscanner-Logo.svg" alt="image" class="d-block w-100 " >
+      </div>
+      <div class="d-flex align-items-center ">
+        <img src="images/white_svgs/5fc4edcf3733cc90a8f402e7_GYG-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+      <div class="d-flex align-items-center  ">
+        <img src="images/white_svgs/5fc4ed455aabf20b8a60c811_Trivago-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+      <div class="d-flex align-items-center ">
+        <img src="images/white_svgs/5fc4defe7c6283fda5bf094a_Shopify-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+      <div class="d-flex align-items-center  ">
+        <img src="images/white_svgs/5fc4c86006388f842828efd6_Sennheiser-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+      <div class="d-flex align-items-center  ">
+        <img src="images/white_svgs/5fc4c800967d83a3d4f502ac_BCG-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+      <div class="d-flex align-items-center  ">
+        <img src="images/white_svgs/5fc4c83b8a88f447cbc4434c_N26-Logo.svg" alt="image" class="d-block  w-100 ">
+      </div>
+    </div>
+    <div class=" d-flex flex-column flex-md-row flex-column align-items-md-center">
+      <button class="btn btn-light p-3 fw-bold btn-outline-dark  d-block">
+        Learn more
+      </button>
+    </div>
+  </div>
+  <div class="col-md-4 p-0 d-none d-xxl-block">
+          <img src="images/5fc8e1f4bc8a02aecf06f035_eyeem-23716958-121079333-(1) (1).png" alt="image" class=" d-block w-100">
+  </div>
+</section>
+
+<section class="row ms-0 me-0">
+  <div class="col-md-7">
+    <h5>
+      Make Money From Your Photography
+    </h5>
+    <p>
+      Share your creativity not your copyright. We make it easy for you to sell your photos.
+    </p>
+  </div>
+  <div class="col-md-5 d-flex flex-column flex-md-row flex-column justify-content-md-center align-items-md-center">
+    <button class="btn btn-light p-3 fw-bold btn-outline-dark  d-block">
+      Sell Photos
+    </button>
+  </div>
+</section>
+
+</main>
+
+<footer class="row text-white  m-4">
+  <div class="text-center fs-3 pt-4 pb-4 pt-lg-5 pb-lg-5">
+      <span>EyeEm</span>
+  </div>
+  <div class="col-lg-3 p-2 accordion-item">
+      <button class="accordion-button text-center d-lg-block justify-content-between" onclick="handle_button()" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+        For Brands
+      </button>
+      <div class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white ">Image Licensing</a></p>
+          <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Image Licensing</a></p>
+          <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">photos & Video Productions</a></p>
+          <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Pricing & License Types</a></p>
+          <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Need help?</a></p>
+        </div>
+      </div>
+  </div>
+  <div class="col-lg-3 p-2 accordion-item ">
+     <button class="accordion-button text-center d-lg-block justify-content-between" onclick="handle_button()" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+      For photographers
+    </button>
+    <div  class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+      <div class="accordion-body">
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Join as photographers</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Sell Your Photos</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Get Booked for shoots</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Ongoing Missions</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">EyeEm Awards</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Need help?</a></p>
+      </div>
+    </div>
+</div>
+<div class="col-lg-3 p-2 accordion-item">
+ <button class="accordion-button  text-center  d-lg-block justify-content-between " onclick="handle_button()" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+      Photography Culture
+  </button>
+  <div class="accordion-collapse collapse show" aria-labelledby="headingThree">
+    <div class="accordion-body">
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">EyeEm Magazine</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Berlin Photo week</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Visual Trends</a></p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 p-2 accordion-item ">
+  <button class="accordion-button  text-center  d-lg-block justify-content-between" onclick="handle_button()" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+    About
+  </button>
+  <div class="accordion-collapse collapse show" aria-labelledby="headingFour">
+    <div class="accordion-body">
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Our Story</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Work With us</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">Press</a></p>
+      <p class="pt-2 pb-2 text-lg-center"><a href="#" class="text-white">FAQ</a></p>
+    </div>
+  </div>
+</div>
+<div class="d-flex flex-wrap mt-5 mt-lg-0 gap-4 justify-content-center justify-content-lg-evenly ">
+      <div class="d-flex flex-nowrap justify-content-center gap-2 align-items-start">
+            <button class="btn btn-dark p-2  btn-outline-light  d-block ">
+                  English
+            </button>
+            <button class="btn btn-dark p-2  btn-outline-light  d-block ">
+                  Arabic
+            </button>
+      </div>
+      <p class="m-0 d-flex justify-content-center align-items-center licences text-center" >
+          © 2022 EyeEm Mobile GmbH.
+      </p>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="ms-2 me-2 text-white ">Privacy</a><a href="#"  class="ms-2 me-2 text-white text-center">Terms of Service</a><a href="#"  class="ms-2 me-2 text-white">Imprint</a>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center footer-icons">
+         <a href="#" title="facebook"><i class="bi bi-facebook p-2 text-white"></i></a>
+         <a href="#" title="instagram"><i class="bi bi-instagram p-2 text-white"></i></a>
+         <a href="#" title="snapchat"><i class="bi bi-snapchat p-2 text-white"></i></a>
+         <a href="#" title="twitter"><i class="bi bi-twitter p-2 text-white"></i></i></a>
+         <a href="#" title="linkedin"> <i class="bi bi-linkedin p-2 text-white"></i></i></a>
+        </div>
+      </div>
+</div>
+</footer>
+<script src="main.js"></script>
+</html>
